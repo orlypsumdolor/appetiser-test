@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/card_view"
+      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_margin="5dp"
+      card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/image_artwork"
+          android:layout_width="90dp"
+          android:layout_height="130dp"
+          android:layout_margin="10dp"
+          android:background="@color/gray"/>
+
+      <TextView
+          android:id="@+id/text_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_toRightOf="@id/image_artwork"
+          android:text="Title Here"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:id="@+id/text_genre"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_name"
+          android:layout_toRightOf="@id/image_artwork"
+          android:text="Genre"
+          android:textSize="18sp"/>
+
+      <TextView
+          android:id="@+id/text_price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_genre"
+          android:layout_toRightOf="@id/image_artwork"
+          android:text="Price"/>
+
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+</RelativeLayout>
